@@ -37,12 +37,6 @@ $('.circle').css({
     'height': cw + 16 + 'px'
 });
 
-//var cw = $('.circle-2').width();
-//$('.circle-2').css({
-//    'height': cw + 'px'
-//});
-
-
 
 
 $(document).ready(function () {
@@ -89,9 +83,9 @@ $('.order-link').on('click', function (e) {
 
 
 /* popup */
-/*setTimeout(function() {
+setTimeout(function() {
     $('#exitpopup-modal').css('display','block');
-},20000);*/
+},20000);
 
 /*clock*/
 function getTimeRemaining(endtime) {
