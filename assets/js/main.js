@@ -37,6 +37,12 @@ $('.circle').css({
     'height': cw + 16 + 'px'
 });
 
+//var cw = $('.circle-2').width();
+//$('.circle-2').css({
+//    'height': cw + 'px'
+//});
+
+
 
 
 $(document).ready(function () {
@@ -47,8 +53,9 @@ $(document).ready(function () {
         slidesPerRow: 1,
         dots: true,
         prevArrow: '<a href="javascript:void(0)" class="slick-prev" style="display: block;"></a>',
-        autoplay: true,
-        autoplaySpeed: 3000,
+       
+        touchThreshold: 15,
+
 
         responsive: [
             {
@@ -83,9 +90,9 @@ $('.order-link').on('click', function (e) {
 
 
 /* popup */
-setTimeout(function() {
-    $('#exitpopup-modal').css('display','block');
-},20000);
+//setTimeout(function() {
+//    $('#exitpopup-modal').css('display','block');
+//},20000);
 
 /*clock*/
 function getTimeRemaining(endtime) {
@@ -129,6 +136,6 @@ function getTimeRemaining(endtime) {
   
   var deadline = new Date(Date.parse(new Date()) + 1 * 1 * 15 * 60 * 1000);
   initializeClock('clockdiv', deadline);
- initializeClock('clockdiv2', deadline);
+ 
 
 

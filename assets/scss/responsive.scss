@@ -2,6 +2,17 @@
     .slick-current + .slick-slide {
         transform: scale(1);
     }
+    
+     #build-2 {
+        display: none;
+         float:left;
+         width: 45%;
+         shape-outside: polygon(0% 100%, 0% 0%, 100% 0%, 100% 52%, 85% 52%, 85% 100%);
+    }
+    
+    #construction-text {
+         margin-left: 45%;
+    }
 
     h1 {
         font-size: 120px;
@@ -67,7 +78,8 @@
         }
 
         .header-text {
-            padding-right: 38%;
+            padding-right: 44%;
+    line-height: 1.8;
         }
     }
 
@@ -188,10 +200,20 @@
 
 
     #doctor {
-       .pointed, .pointed-3 {
+
+        .pointed
+         {
+            padding-right: 9%;
+            padding-left: 34px;
+        }
+        
+       
+        
+        .pointed-3 {
             padding-right: 18%;
             padding-left: 68px;
         }
+
         .pointed-2 {
             padding-left: 16%;
         }
@@ -228,8 +250,9 @@
     footer {
 
         img {
-            width: 70%;
+            width: 81%;
             margin-left: -102px;
+            margin-top: 50px;
         }
     }
 
@@ -254,7 +277,20 @@
     }
 }
 
-@media (max-width: 1342px) {
+@media (max-width: 1400px) {
+    #build {
+        display: none;
+    }
+    #build-2 {
+        display: block;
+    }
+    
+     #construction-text {
+         margin-left: 0;
+    }
+}
+
+@media (max-width: 1342px) {    
     #stages {
         padding-left: 30px;
         padding-right: 30px;
@@ -408,7 +444,6 @@
     .hex-3 {
         margin-left: 148px;
         margin-top: 15px;
-
     }
 
 
@@ -433,6 +468,13 @@
 }
 
 @media (max-width: 992px) {
+    #build-2 {
+        float: none;
+        width: 100%;
+    }
+    
+    
+    
     #exitpopup-modal {
     display: none !important;
 }

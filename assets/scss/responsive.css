@@ -113,7 +113,10 @@
     left: 76%;
     top: 0%; }
 
-  #doctor .pointed, #doctor .pointed-3 {
+  #doctor .pointed {
+    padding-right: 9%;
+    padding-left: 34px; }
+  #doctor .pointed-3 {
     padding-right: 18%;
     padding-left: 68px; }
   #doctor .pointed-2 {

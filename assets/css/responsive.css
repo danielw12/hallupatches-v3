@@ -3,6 +3,15 @@
     -webkit-transform: scale(1);
             transform: scale(1); }
 
+  #build-2 {
+    display: none;
+    float: left;
+    width: 45%;
+    shape-outside: polygon(0% 100%, 0% 0%, 100% 0%, 100% 52%, 85% 52%, 85% 100%); }
+
+  #construction-text {
+    margin-left: 45%; }
+
   h1 {
     font-size: 120px; }
 
@@ -43,7 +52,8 @@
   header .product {
     float: right; }
   header .header-text {
-    padding-right: 38%; }
+    padding-right: 44%;
+    line-height: 1.8; }
 
   #effectiveness .circle p.circle-text {
     font-size: 3vw; }
@@ -116,7 +126,10 @@
     left: 76%;
     top: 0%; }
 
-  #doctor .pointed, #doctor .pointed-3 {
+  #doctor .pointed {
+    padding-right: 9%;
+    padding-left: 34px; }
+  #doctor .pointed-3 {
     padding-right: 18%;
     padding-left: 68px; }
   #doctor .pointed-2 {
@@ -135,8 +148,9 @@
     left: -11%; }
 
   footer img {
-    width: 70%;
-    margin-left: -102px; }
+    width: 81%;
+    margin-left: -102px;
+    margin-top: 50px; }
 
   legend {
     padding: 20px 10px 10px 10px; }
@@ -149,6 +163,15 @@
 
   .form-header {
     font-size: 17px; } }
+@media (max-width: 1400px) {
+  #build {
+    display: none; }
+
+  #build-2 {
+    display: block; }
+
+  #construction-text {
+    margin-left: 0; } }
 @media (max-width: 1342px) {
   #stages {
     padding-left: 30px;
@@ -251,6 +274,10 @@
     margin-left: 446px;
     margin-top: -179px; } }
 @media (max-width: 992px) {
+  #build-2 {
+    float: none;
+    width: 100%; }
+
   #exitpopup-modal {
     display: none !important; }
 
