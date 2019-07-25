@@ -12,11 +12,17 @@
   #construction-text {
     margin-left: 45%; }
 
+  .product-2 {
+    display: none; }
+
   h1 {
     font-size: 120px; }
 
   h2 {
     font-size: 69px; }
+
+  .slanted-text {
+    margin-top: 50px; }
 
   h4 {
     font-size: 50px; }
@@ -25,7 +31,7 @@
     font-size: 58px; }
 
   p {
-    font-size: 23px; }
+    font-size: 18px; }
 
   .slant p {
     font-size: 55px; }
@@ -187,10 +193,28 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9); }
 
+  h1 {
+    font-size: 69px; }
+
+  h2 {
+    font-size: 48px; }
+
+  #order h1 {
+    font-size: 58px; }
+
   header .product {
     display: none; }
+  header .product-2 {
+    display: block;
+    margin: 0 auto; }
   header .header-text {
     padding-right: 0; }
+  header .slanted-text {
+    margin-top: 0; }
+
+  footer img {
+    margin-left: -51px;
+    margin-top: 152px; }
 
   #doctor .pointed,
   #doctor .pointed-3 {
@@ -202,32 +226,6 @@
   .box {
     padding-left: 10%; } }
 @media (max-width: 1260px) {
-  h1 {
-    font-size: 69px; }
-
-  h2 {
-    font-size: 48px; }
-
-  #order h1 {
-    font-size: 58px; }
-
-  /*HEXAGONS*/
-  .last-hex {
-    margin-left: 147px;
-    margin-top: 10px; }
-
-  .hex-5 {
-    margin-left: 0; }
-
-  .hex-6 {
-    margin-left: 16px; }
-
-  .hex-7 {
-    margin-left: 16px; }
-
-  .hex-8 {
-    margin-left: 148px; }
-
   /* CIRCLE*/
   .circle-box {
     height: 420px; }
@@ -239,14 +237,14 @@
     left: 36%; }
 
   .round-box3 {
-    left: 58%; }
+    left: 57%; }
 
   .round-box4 {
     left: 25%;
     top: 43%; }
 
   .round-box5 {
-    left: 47%;
+    left: 46%;
     top: 43%; }
 
   #opinions .text-bubble img {
@@ -277,6 +275,9 @@
   #build-2 {
     float: none;
     width: 100%; }
+
+  .product-2 {
+    display: none !important; }
 
   #exitpopup-modal {
     display: none !important; }
