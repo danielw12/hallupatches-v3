@@ -61,7 +61,7 @@ header {
     }
 
     h4 {
-        
+
         font-weight: 300;
         /*background: rgb(100, 99, 99);
         background: linear-gradient(90deg, rgba(100, 99, 99, 1) 15%, rgba(255, 255, 255, 1) 30%, rgba(100, 99, 99, 1) 50%, rgba(255, 255, 255, 1) 70%, rgba(100, 99, 99, 1) 85%);*/
@@ -71,13 +71,13 @@ header {
 
     }
 
-    h2 {
+    .slanted-text {
 
         text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35);
         transform: rotate(-2deg);
         line-height: .9;
         font-style: italic;
-        margin-top: 50px;
+       
 
 
 
@@ -101,9 +101,9 @@ header {
 
     .product {
 
-        width: 39%;
-        margin-top: -13%;
-        margin-right: -11%;
+        width: 49%;
+        margin-top: -9%;
+        margin-right: -8%;
     }
 
     .header-text {
@@ -158,12 +158,11 @@ header {
 }
 
 #about {
-
     background-size: cover;
-    padding: 20px 0;
+    padding: 20px 0 50px 0;
 
     .container {
-        max-width: 1310px;
+        max-width: 1500px;
 
         h2 {
 
@@ -176,6 +175,14 @@ header {
             column-rule: 1px solid lightblue;*/
 
             margin-bottom: 20px;
+
+            img {
+                shape-outside: polygon(100% 0%, 100% 100%, 41% 100%, 37% 71%, 15% 51%, 5% 39%, 0% 28%, 1% 16%, 7% 8%, 23% 0%);
+                float: right;
+                width: 30%;
+               
+                margin-left: 20px;
+            }
         }
 
         .newspaper:first-letter {
@@ -223,7 +230,7 @@ header {
         .arrow {
             position: absolute;
             z-index: 8;
-            top: 37.5%;
+            top: 38%;
             right: -16%;
         }
 
@@ -423,16 +430,16 @@ header {
 }
 
 #doctor {
-     h2 {
+    h2 {
 
-            text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35);
-        }
-    
+        text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35);
+    }
+
     .container {
         max-width: 1255px;
         padding: 30px 0;
 
-       
+
 
         p {
             color: rgb(0, 133, 127);
@@ -598,7 +605,7 @@ header {
 
 #promo {
     background-color: #8accc5;
-    
+
     overflow: hidden;
     font-family: "Verdana", sans-serif;
 
@@ -615,7 +622,7 @@ header {
         background: linear-gradient(180deg, rgba(100, 99, 99, 1) 15%, rgba(255, 255, 255, 1) 30%, rgba(100, 99, 99, 1) 50%, rgba(255, 255, 255, 1) 70%, rgba(100, 99, 99, 1) 85%);
         width: 100%;
         justify-content: center;
-        display: flex;   
+        display: flex;
         padding: 5px;
         border-radius: 50%;
 
@@ -657,7 +664,7 @@ header {
     }
 
     .right-box {
-        
+
         button:hover {
             cursor: pointer;
         }
@@ -680,6 +687,135 @@ header {
         }
     }
 }
+
+#construction {
+    padding: 30px 20px 80px 40px;
+    //    background: radial-gradient(circle, #3fa59f 50%, #00857f 100%);
+    //    
+    background-image: url(../img/Plaster_BUDOWA-BG-01.png);
+    background-size: cover;
+
+   
+  
+        
+        #build {
+            float: left;
+            width: 45%;
+            shape-outside: polygon(0% 100%, 0% 0%, 100% 0%, 100% 52%, 85% 52%, 85% 100%);
+        }
+        
+        #construction-header   {
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            
+            .bigger {
+                font-size: 44px;
+                color: rgba(0, 133, 127, 1);
+            }
+        }
+    
+    #construction-text   {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 15px;
+       
+        margin-bottom: 20px;
+        
+    }
+    
+    #elements-box {
+        
+        p {
+            line-height: 1.2;
+            
+            padding-right: 10%;
+            
+            span {
+                font-size: 28px;
+                color: rgba(0, 133, 127, 1);
+                font-weight: bold;    
+            }
+        }
+    }
+        
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: justify;
+        }
+    
+
+    
+
+   
+    .patch-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/*
+.list {
+    list-style: none;
+    
+}
+
+.item {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+}
+
+.item:before {
+    font-size: 30px;
+    content: counter(list);
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: #fdfdfd;
+    background: #00827f linear-gradient(to bottom left, #00827f 25%, #FFEDBC);
+    text-shadow: 0 0 2px #00827f;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    shape-outside: ellipse();
+    z-index: 1;
+}
+
+.item:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    content: "";
+    background: #00827f;
+    z-index: -1;
+    border-top-left-radius: 3px;
+    
+}
+
+
+.headline {
+    padding: 0rem 0 0 0;
+    margin: 0 0 1rem 0;
+   font-size: 36px;
+    margin-bottom: 0 !important;
+    color:  #00827f;
+}
+*/
+
 
 
 
@@ -822,24 +958,24 @@ header {
         text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35);
     }
 
-//    .effects-box {
-//        background: linear-gradient(90deg, rgba(207, 232, 219, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(138, 204, 197, 1) 100%);
-//        height: 570px;
-//        border-radius: 25px;
-//        border: 6px solid rgb(254, 211, 0);
-//        overflow: hidden;
-//
-//
-//        img {
-//            width: 102%;
-//            height: 104%;
-//            display: block;
-//            margin-left: -10px;
-//            border-radius: 22px;
-//            margin-top: -10px;
-//
-//        }
-//    }
+    //    .effects-box {
+    //        background: linear-gradient(90deg, rgba(207, 232, 219, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(138, 204, 197, 1) 100%);
+    //        height: 570px;
+    //        border-radius: 25px;
+    //        border: 6px solid rgb(254, 211, 0);
+    //        overflow: hidden;
+    //
+    //
+    //        img {
+    //            width: 102%;
+    //            height: 104%;
+    //            display: block;
+    //            margin-left: -10px;
+    //            border-radius: 22px;
+    //            margin-top: -10px;
+    //
+    //        }
+    //    }
 
     .effects-box-2 {
         border: 6px solid rgb(254, 211, 0);
@@ -887,7 +1023,7 @@ header {
             }
         }
 
-       
+
     }
 
     .circle-box {
@@ -1157,26 +1293,24 @@ footer {
         justify-content: center;
 
         .popup {
-           
+
             padding: 0;
             position: relative;
-             
 
-            .popup__content {
-               
-            }
+
+            .popup__content {}
 
             .exitpopup-left {
-               padding: 20px;
-                 background: #e0eaf4;
+                padding: 20px;
+                background: #e0eaf4;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
-               
+
                 p {
-                     font-size: 32px;
+                    font-size: 32px;
                     font-weight: 600;
                 }
-                
+
                 .price {
                     font-size: 52px;
                     font-weight: 600;
@@ -1249,8 +1383,8 @@ footer {
 
                 .exitpopup__desc {
                     font-size: 26px;
-                   font-weight: 600;
-                   line-height: 1;
+                    font-weight: 600;
+                    line-height: 1;
                     color: #000;
                     text-align: center;
                     margin-bottom: 85px;
@@ -1258,7 +1392,7 @@ footer {
 
                 .form-2 {
                     width: 80%;
-                   margin: 0 auto;
+                    margin: 0 auto;
                     padding: 10px;
                     text-align: left;
                     background-color: white;
@@ -1333,14 +1467,14 @@ footer {
 
 }
 
-#clockdiv>div {
-    
+#clockdiv > div {
+
     border-radius: 3px;
-    
+
     display: inline-block;
 }
 
-#clockdiv div>span {
+#clockdiv div > span {
     padding: 15px;
     border-radius: 3px;
     background: url(../img/timer-bg.png) no-repeat scroll 0 0;
@@ -1356,22 +1490,17 @@ footer {
 
 
 
-#clockdiv2>div {
-    
+#clockdiv2 > div {
+
     border-radius: 3px;
-    
+
     display: inline-block;
 }
 
-#clockdiv2 div>span {
+#clockdiv2 div > span {
     padding: 5px;
     border-radius: 3px;
     background: url(../img/timer-bg.png) no-repeat scroll 0 0;
     background-size: cover;
     display: inline-block;
 }
-
-
-
-
-

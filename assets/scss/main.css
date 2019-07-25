@@ -94,8 +94,7 @@ header {
 
 #merge {
   background-image: url(../img/Kroki_bg.jpg);
-  background-size: cover;
-  overflow-x: hidden; }
+  background-size: cover; }
 
 #about {
   background-size: cover;
