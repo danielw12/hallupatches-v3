@@ -90,9 +90,9 @@ $('.order-link').on('click', function (e) {
 
 
 /* popup */
-setTimeout(function() {
-    $('#exitpopup-modal').css('display','block');
-},20000);
+//setTimeout(function() {
+//    $('#exitpopup-modal').css('display','block');
+//},20000);
 
 /*clock*/
 function getTimeRemaining(endtime) {

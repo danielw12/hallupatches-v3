@@ -150,7 +150,9 @@ header {
     #stages .cutout-box .arrow {
       position: absolute;
       z-index: 8;
-      top: 38%;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
       right: -16%; }
     #stages .cutout-box .nr1 {
       background-image: url(../img/1.png); }
@@ -167,7 +169,7 @@ header {
       background-color: white;
       background-repeat: no-repeat;
       height: 100%;
-      padding: 50px 30px;
+      padding: 50px 32px;
       text-align: center;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -420,13 +422,25 @@ header {
       width: 20%; }
 
 #construction {
-  padding: 30px 20px 110px 40px;
+  padding: 30px 20px 80px 40px;
   background-image: url(../img/Plaster_BUDOWA-BG-01.png);
   background-size: cover; }
-  #construction #build {
-    float: left;
+  #construction .big {
+    font-size: 24px; }
+  #construction .build-box {
     width: 45%;
-    shape-outside: polygon(0% 100%, 0% 0%, 100% 0%, 100% 52%, 85% 52%, 85% 100%); }
+    float: left;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 20px;
+    margin-bottom: 15px; }
+    #construction .build-box #build {
+      width: 100%; }
+    #construction .build-box .undertext {
+      font-size: 12px;
+      background-color: rgba(163, 163, 163, 0.2);
+      padding: 10px;
+      text-align: justify;
+      line-height: 1; }
   #construction #construction-header {
     font-size: 36px;
     line-height: 1.2;
@@ -438,13 +452,14 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
     margin-bottom: 20px; }
-  #construction #elements-box p {
-    line-height: 1.2;
-    padding-right: 10%; }
-    #construction #elements-box p span {
-      font-size: 28px;
-      color: #00857f;
-      font-weight: bold; }
+  #construction #elements-box {
+    margin-top: 40px; }
+    #construction #elements-box p {
+      line-height: 1.2; }
+      #construction #elements-box p span {
+        font-size: 28px;
+        color: #00857f;
+        font-weight: bold; }
   #construction p {
     font-size: 18px;
     font-weight: 500;
@@ -517,6 +532,18 @@ header {
     color:  #00827f;
 }
 */
+#join {
+  background-image: url(../img/join-bg.jpg);
+  background-size: cover;
+  padding: 30px 0; }
+  #join h2 {
+    margin-bottom: 30px;
+    color: white; }
+  #join .join-text {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    text-align: justify; }
+
 #opinions {
   padding: 40px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#cfe8db), color-stop(50%, white), to(#8accc5));

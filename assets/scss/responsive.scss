@@ -10,13 +10,13 @@
          shape-outside: polygon(0% 100%, 0% 0%, 100% 0%, 100% 52%, 85% 52%, 85% 100%);
     }
     
-    #construction-text {
-         margin-left: 45%;
+    .product-2 {
+        display: none;
     }
     
-     .product-2 {
-            display: none;
-        }
+    #construction-text {
+        
+    }
 
     h1 {
         font-size: 120px;
@@ -27,7 +27,7 @@
     }
     
     .slanted-text {
-        margin-top: 50px;
+         margin-top: 50px;
     }
     
     h4 {
@@ -41,7 +41,7 @@
     }
 
     p {
-        font-size: 18px;
+        font-size: 23px;
 
     }
 
@@ -259,8 +259,8 @@
 
         img {
             width: 81%;
-            margin-left: -102px;
-            margin-top: 50px;
+            margin-left: -50px;
+            margin-top: 183px;
         }
     }
 
@@ -286,13 +286,7 @@
 }
 
 @media (max-width: 1400px) {
-    #build {
-        display: none;
-    }
-    #build-2 {
-        display: block;
-    }
-    
+   
      #construction-text {
          margin-left: 0;
     }
@@ -303,13 +297,7 @@
         padding-left: 30px;
         padding-right: 30px;
 
-        .cutout:after,
-        .cutout-2:after,
-        .cutout-2:before,
-        .cutout-3:before,
-        .arrow {
-            display: none;
-        }
+       
     }
 
 }
@@ -317,6 +305,10 @@
 @media (max-width: 1280px) {
     .slick-current + .slick-slide {
         transform: scale(.9);
+    }
+    
+     .slanted-text {
+         margin-top: 0;
     }
     
      h1 {
@@ -341,25 +333,13 @@
             display: none;
         }
         
-         .product-2 {
-            display: block;
-             margin: 0 auto;
+        .product-2 {
+            display:block;
+            margin: 0 auto;
         }
 
         .header-text {
             padding-right: 0;
-        }
-        
-        .slanted-text {
-        margin-top: 0;
-    }
-    }
-    
-    footer {
-        
-        img {
-            margin-left: -51px;
-    margin-top: 152px;
         }
     }
 
@@ -385,8 +365,16 @@
 
 
 @media (max-width: 1260px) {
-   
-
+    
+    #stages {
+         .cutout:after,
+        .cutout-2:after,
+        .cutout-2:before,
+        .cutout-3:before,
+        .arrow {
+            display: none;
+        }
+    }
    
     /* CIRCLE*/
 
@@ -443,6 +431,9 @@
             display: block;
         }
     }
+    
+    
+   
 }
 
 
@@ -479,9 +470,9 @@
         width: 100%;
     }
     
-     .product-2 {
-            display: none !important;
-        }
+    .product-2 {
+        display: none !important;
+    }
     
     #exitpopup-modal {
     display: none !important;
@@ -648,6 +639,11 @@
 @media (max-width: 768px) {
     p {
         font-size: 18px;
+    }
+    
+     .build-box {
+        float: none !important;
+        width: 100% !important
     }
 
     #effectiveness {

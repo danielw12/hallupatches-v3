@@ -77,7 +77,7 @@ header {
         transform: rotate(-2deg);
         line-height: .9;
         font-style: italic;
-        
+
 
 
 
@@ -180,7 +180,7 @@ header {
                 shape-outside: polygon(100% 0%, 100% 100%, 41% 100%, 37% 71%, 15% 51%, 5% 39%, 0% 28%, 1% 16%, 7% 8%, 23% 0%);
                 float: right;
                 width: 30%;
-               
+
                 margin-left: 20px;
             }
         }
@@ -230,7 +230,8 @@ header {
         .arrow {
             position: absolute;
             z-index: 8;
-            top: 38%;
+           top: 50%;                       
+   transform: translate(0, -50%);
             right: -16%;
         }
 
@@ -258,7 +259,7 @@ header {
 
             background-repeat: no-repeat;
             height: 100%;
-            padding: 50px 30px;
+            padding: 50px 32px;
             text-align: center;
             display: flex;
             align-items: center;
@@ -417,29 +418,23 @@ header {
         max-width: 1300px;
 
         h2 {
-
             font-weight: 300;
         }
 
         p.gray {
-
             margin-bottom: 0;
         }
-
     }
 }
 
 #doctor {
     h2 {
-
         text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35);
     }
 
     .container {
         max-width: 1255px;
         padding: 30px 0;
-
-
 
         p {
             color: rgb(0, 133, 127);
@@ -455,7 +450,6 @@ header {
             border: 4px solid rgb(0, 133, 127);
         }
     }
-
 
     .bg2 {
         background-image: url(../img/doctor.png);
@@ -494,13 +488,10 @@ header {
         padding-top: 30px;
         padding-bottom: 30px;
 
-
         img {
             float: left;
             margin-right: 10px;
             margin-bottom: 8px;
-
-
         }
 
         p {
@@ -530,23 +521,17 @@ header {
         padding-top: 30px;
         padding-bottom: 30px;
 
-
         img {
             float: left;
             margin-right: 10px;
             margin-bottom: 8px;
-
         }
-
-
 
         p {
             color: white;
-
             padding-right: 10px;
             margin-bottom: 0;
         }
-
     }
 
     .pointed-2:after,
@@ -568,7 +553,6 @@ header {
     .pointed-3 {
         position: relative;
         background: white;
-
         padding-top: 30px;
         padding-bottom: 30px;
 
@@ -577,12 +561,9 @@ header {
             float: left;
             margin-right: 10px;
             margin-bottom: 8px;
-
-
         }
 
         p {
-
             margin-bottom: 0;
         }
     }
@@ -664,7 +645,7 @@ header {
     }
 
     .right-box {
-
+        
         button:hover {
             cursor: pointer;
         }
@@ -689,65 +670,73 @@ header {
 }
 
 #construction {
-    padding: 30px 20px 110px 40px;
+    padding: 30px 20px 80px 40px;
     //    background: radial-gradient(circle, #3fa59f 50%, #00857f 100%);
     //    
     background-image: url(../img/Plaster_BUDOWA-BG-01.png);
     background-size: cover;
 
-   
-  
-        
+    .big {
+        font-size: 24px;
+    }
+
+    .build-box {
+        width: 45%;
+        float: left;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-right: 20px;
+        margin-bottom: 15px;
+
         #build {
-            float: left;
-            width: 45%;
-            shape-outside: polygon(0% 100%, 0% 0%, 100% 0%, 100% 52%, 85% 52%, 85% 100%);
+            width: 100%;
         }
-        
-        #construction-header   {
-            font-size: 36px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            
-            .bigger {
-                font-size: 44px;
-                color: rgba(0, 133, 127, 1);
-            }
+
+        .undertext {
+            font-size: 12px;
+            background-color: rgba(163, 163, 163, .2);
+            padding: 10px;
+            text-align: justify;
+            line-height: 1;
         }
-    
-    #construction-text   {
+    }
+
+    #construction-header {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+
+        .bigger {
+            font-size: 44px;
+            color: rgba(0, 133, 127, 1);
+        }
+    }
+
+    #construction-text {
         background-color: rgba(255, 255, 255, 0.5);
         padding: 15px;
-       
         margin-bottom: 20px;
-        
     }
-    
+
     #elements-box {
-        
+        margin-top: 40px;
+
         p {
             line-height: 1.2;
-            
-            padding-right: 10%;
-            
+
             span {
                 font-size: 28px;
                 color: rgba(0, 133, 127, 1);
-                font-weight: bold;    
+                font-weight: bold;
             }
         }
     }
-        
-        p {
-            font-size: 18px;
-            font-weight: 500;
-            text-align: justify;
-        }
-    
 
-    
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: justify;
+    }
 
-   
     .patch-box {
         display: flex;
         flex-direction: column;
@@ -816,7 +805,23 @@ header {
 }
 */
 
+#join {
+    background-image: url(../img/join-bg.jpg);
 
+    background-size: cover;
+    padding: 30px 0;
+
+    h2 {
+        margin-bottom: 30px;
+        color: white;
+    }
+    
+    .join-text {
+         background-color: rgba(255, 255, 255, 0.5);
+        padding: 15px;
+        text-align: justify;
+    }
+}
 
 
 #opinions {
