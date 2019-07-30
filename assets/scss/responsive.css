@@ -11,9 +11,6 @@
   .product-2 {
     display: none; }
 
-  #construction-text {
-    margin-left: 45%; }
-
   h1 {
     font-size: 120px; }
 
@@ -167,27 +164,18 @@
   .form-header {
     font-size: 17px; } }
 @media (max-width: 1400px) {
-  #build {
-    display: none; }
-
-  #build-2 {
-    display: block; }
-
   #construction-text {
     margin-left: 0; } }
 @media (max-width: 1342px) {
   #stages {
     padding-left: 30px;
-    padding-right: 30px; }
-    #stages .cutout:after,
-    #stages .cutout-2:after,
-    #stages .cutout-2:before,
-    #stages .cutout-3:before,
-    #stages .arrow {
-      display: none; } }
+    padding-right: 30px; } }
 @media (max-width: 1280px) {
   .slick-current + .slick-slide {
     transform: scale(0.9); }
+
+  .text-bubble h3 {
+    font-size: 20px; }
 
   .slanted-text {
     margin-top: 0; }
@@ -219,6 +207,13 @@
   .box {
     padding-left: 10%; } }
 @media (max-width: 1260px) {
+  #stages .cutout:after,
+  #stages .cutout-2:after,
+  #stages .cutout-2:before,
+  #stages .cutout-3:before,
+  #stages .arrow {
+    display: none; }
+
   /* CIRCLE*/
   .circle-box {
     height: 420px; }
@@ -375,6 +370,10 @@
 @media (max-width: 768px) {
   p {
     font-size: 18px; }
+
+  .build-box {
+    float: none !important;
+    width: 100% !important; }
 
   #effectiveness {
     padding: 20px 100px; }

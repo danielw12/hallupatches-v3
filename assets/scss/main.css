@@ -141,7 +141,8 @@ header {
     #stages .cutout-box .arrow {
       position: absolute;
       z-index: 8;
-      top: 34%;
+      top: 50%;
+      transform: translate(0, -50%);
       right: -16%; }
     #stages .cutout-box .nr1 {
       background-image: url(../img/1.png); }
@@ -383,10 +384,21 @@ header {
   padding: 30px 20px 80px 40px;
   background-image: url(../img/Plaster_BUDOWA-BG-01.png);
   background-size: cover; }
-  #construction #build {
+  #construction .big {
+    font-size: 24px; }
+  #construction .build-box {
     width: 45%;
     float: left;
-    shape-outside: polygon(0% 100%, 0% 0%, 100% 0%, 100% 52%, 85% 52%, 85% 100%); }
+    margin-right: 20px;
+    margin-bottom: 15px; }
+    #construction .build-box #build {
+      width: 100%; }
+    #construction .build-box .undertext {
+      font-size: 12px;
+      background-color: rgba(163, 163, 163, 0.2);
+      padding: 10px;
+      text-align: justify;
+      line-height: 1; }
   #construction #construction-header {
     font-size: 36px;
     line-height: 1.2;
@@ -398,13 +410,14 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
     margin-bottom: 20px; }
-  #construction #elements-box p {
-    line-height: 1.2;
-    padding-right: 10%; }
-    #construction #elements-box p span {
-      font-size: 28px;
-      color: #00857f;
-      font-weight: bold; }
+  #construction #elements-box {
+    margin-top: 40px; }
+    #construction #elements-box p {
+      line-height: 1.2; }
+      #construction #elements-box p span {
+        font-size: 28px;
+        color: #00857f;
+        font-weight: bold; }
   #construction p {
     font-size: 18px;
     font-weight: 500;
@@ -477,6 +490,10 @@ header {
   #join h2 {
     margin-bottom: 30px;
     color: white; }
+  #join .join-text {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    text-align: justify; }
 
 #opinions {
   padding: 40px 0;

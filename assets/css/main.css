@@ -11,9 +11,6 @@ body {
 .yellow {
   color: #ffed00; }
 
-.gray {
-  color: black; }
-
 .green {
   color: #00857f; }
 
@@ -41,8 +38,6 @@ header {
       font-weight: 500; }
   header h4 {
     font-weight: 300;
-    /*background: rgb(100, 99, 99);
-    background: linear-gradient(90deg, rgba(100, 99, 99, 1) 15%, rgba(255, 255, 255, 1) 30%, rgba(100, 99, 99, 1) 50%, rgba(255, 255, 255, 1) 70%, rgba(100, 99, 99, 1) 85%);*/
     border-radius: 10px;
     margin-left: 2px;
     color: white; }
@@ -61,10 +56,6 @@ header {
   header .yellow-line {
     margin-bottom: 20px;
     max-width: 100%; }
-  header .product {
-    width: 49%;
-    margin-top: -9%;
-    margin-right: -8%; }
   header .header-text {
     text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35); }
 
@@ -93,7 +84,6 @@ header {
         font-weight: 800;
         color: #ffed00; }
     #effectiveness .container p:not(.circle-text) {
-      font-size: 20px;
       font-weight: 300;
       line-height: 1.1;
       color: white; }
@@ -111,9 +101,6 @@ header {
     #about .container h2 {
       font-weight: 400; }
     #about .container .newspaper {
-      /*column-count: 2;
-      column-gap: 40px;
-      column-rule: 1px solid lightblue;*/
       margin-bottom: 20px; }
       #about .container .newspaper img {
         shape-outside: polygon(100% 0%, 100% 100%, 41% 100%, 37% 71%, 15% 51%, 5% 39%, 0% 28%, 1% 16%, 7% 8%, 23% 0%);
@@ -128,19 +115,20 @@ header {
       margin-right: 6px; }
 
 #stages {
-  /* background: linear-gradient(90deg, rgba(0, 133, 127, 0.5) 0%, rgba(0, 133, 127, 0) 100%);*/
   background-color: #8accc5;
   padding: 40px 0; }
   #stages .container {
     max-width: 1300px; }
   #stages .slant {
     -webkit-transform: skew(-5deg, 0);
-            transform: skew(-5deg, 0); }
-    #stages .slant p .elo {
+            transform: skew(-5deg, 0);
+    display: block;
+    margin: 0 auto; }
+    #stages .slant h2 .elo {
       background: -webkit-gradient(linear, left top, right top, from(#cfe8db), color-stop(50%, white), to(#8accc5));
       background: linear-gradient(90deg, #cfe8db 0%, white 50%, #8accc5 100%);
       color: #00857f; }
-    #stages .slant p .olo {
+    #stages .slant h2 .olo {
       background-color: #00857f;
       text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35);
       color: #ffed00; }
@@ -169,7 +157,7 @@ header {
       background-color: white;
       background-repeat: no-repeat;
       height: 100%;
-      padding: 50px 32px;
+      padding: 50px 40px;
       text-align: center;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -425,32 +413,25 @@ header {
   padding: 30px 20px 80px 40px;
   background-image: url(../img/Plaster_BUDOWA-BG-01.png);
   background-size: cover; }
-  #construction .big {
-    font-size: 24px; }
+  #construction .container {
+    max-width: 1300px; }
+  #construction h2 {
+    font-weight: 400; }
   #construction .build-box {
-    width: 45%;
-    float: left;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-right: 20px;
-    border: 4px solid #00857f; }
+    border: 4px solid black; }
     #construction .build-box #build {
-      width: 100%; }
+      width: 100%;
+      margin: 15px 0; }
     #construction .build-box .undertext {
-      font-size: 12px;
+      font-size: 14px;
       background-color: rgba(163, 163, 163, 0.2);
       padding: 10px;
-      text-align: justify;
+      text-align: center;
       line-height: 1; }
   #construction #construction-header {
-    font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px; }
-    #construction #construction-header .bigger {
-      font-size: 44px;
-      color: #00857f; }
   #construction #construction-text {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 15px;
     margin-bottom: 20px; }
   #construction #elements-box {
     margin-top: 40px; }
@@ -461,7 +442,6 @@ header {
         color: #00857f;
         font-weight: bold; }
   #construction p {
-    font-size: 18px;
     font-weight: 500;
     text-align: justify; }
   #construction .patch-box {
@@ -476,66 +456,12 @@ header {
         -ms-flex-pack: center;
             justify-content: center; }
 
-/*
-.list {
-    list-style: none;
-    
-}
-
-.item {
-    display: block;
-    clear: both;
-    counter-increment: list;
-    padding-bottom: 10px;
-    font-size: 1.1rem;
-    line-height: 1.375;
-    position: relative;
-}
-
-.item:before {
-    font-size: 30px;
-    content: counter(list);
-    width: 5rem;
-    height: 5rem;
-    float: left;
-    margin: 0 1.5rem 0.75rem 0;
-    color: #fdfdfd;
-    background: #00827f linear-gradient(to bottom left, #00827f 25%, #FFEDBC);
-    text-shadow: 0 0 2px #00827f;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    shape-outside: ellipse();
-    z-index: 1;
-}
-
-.item:after {
-    width: 2.5rem;
-    height: 2.5rem;
-    position: absolute;
-    top: 0;
-    left: 40px;
-    content: "";
-    background: #00827f;
-    z-index: -1;
-    border-top-left-radius: 3px;
-    
-}
-
-
-.headline {
-    padding: 0rem 0 0 0;
-    margin: 0 0 1rem 0;
-   font-size: 36px;
-    margin-bottom: 0 !important;
-    color:  #00827f;
-}
-*/
 #join {
   background-image: url(../img/join-bg.jpg);
   background-size: cover;
   padding: 30px 0; }
+  #join .container {
+    max-width: 1300px; }
   #join h2 {
     margin-bottom: 30px;
     color: white; }
@@ -563,18 +489,7 @@ header {
       background: radial-gradient(circle, #ffed00 50%, #fed300 100%);
       border-radius: 30px;
       padding: 20px;
-      height: 100%;
-         /* .first:first-letter {
-         
-     font-size: 40px;
-     float: left;
-     line-height: .8;
-     margin-top: 4px;
-     margin-right: 20px;
-             
-
-         }
-         */ }
+      height: 100%; }
       #opinions .container .text-bubble img {
         display: block;
         width: 200px;
@@ -618,8 +533,7 @@ header {
   #over h3 {
     font-weight: 600; }
   #over p {
-    font-weight: 600;
-    font-size: 18px; }
+    font-weight: 600; }
 
 #effects {
   background: #00857f;
@@ -629,10 +543,8 @@ header {
     font-weight: 300;
     line-height: 1;
     text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35); }
-  #effects p {
-    font-size: 35px;
+  #effects h4 {
     font-weight: 300;
-    margin-left: 2px;
     color: white;
     text-shadow: 6px 4px 2px rgba(0, 78, 127, 0.35); }
   #effects .effects-box-2 {
@@ -641,13 +553,18 @@ header {
     overflow: hidden; }
     #effects .effects-box-2 .green-box {
       color: white;
+      background-color: #3fa59f; }
+    #effects .effects-box-2 .yellow-box {
+      background: radial-gradient(circle, #ffed00 50%, #fed300 100%);
+      font-weight: bold; }
+    #effects .effects-box-2 .yellow-box,
+    #effects .effects-box-2 .green-box {
       text-align: center;
-      background-color: #3fa59f;
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: 10%;
-      font-size: .7em;
+      height: 20%;
+      font-size: 16px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -657,24 +574,6 @@ header {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-    #effects .effects-box-2 .yellow-box {
-      text-align: center;
-      background: radial-gradient(circle, #ffed00 50%, #fed300 100%);
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 10%;
-      font-size: .7em;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      font-weight: bold; }
     #effects .effects-box-2 .half {
       padding: 0;
       height: 100%; }
@@ -698,27 +597,31 @@ header {
           -ms-flex-align: center;
               align-items: center;
       text-align: center; }
+      #effects .circle-box .circle-2 br {
+        font-size: 24px; }
       #effects .circle-box .circle-2 div {
-        font-size: 24px;
         font-weight: 500;
-        padding: 0 40px 0 40px; }
+        padding: 20px 40px 20px 40px; }
+        #effects .circle-box .circle-2 div p {
+          font-size: 24px; }
       #effects .circle-box .circle-2 div.last {
-        padding: 0 20px; }
-  #effects .round-box1 {
-    z-index: 1;
-    position: absolute; }
-  #effects .round-box2 {
-    z-index: 2;
-    position: absolute; }
-  #effects .round-box3 {
-    z-index: 3;
-    position: absolute; }
-  #effects .round-box4 {
-    z-index: 4;
-    position: absolute; }
+        padding: 20px 20px 20px 20px; }
+  #effects .round-box1,
+  #effects .round-box2,
+  #effects .round-box3,
+  #effects .round-box4,
   #effects .round-box5 {
-    z-index: 5;
     position: absolute; }
+  #effects .round-box1 {
+    z-index: 1; }
+  #effects .round-box2 {
+    z-index: 2; }
+  #effects .round-box3 {
+    z-index: 3; }
+  #effects .round-box4 {
+    z-index: 4; }
+  #effects .round-box5 {
+    z-index: 5; }
 
 #caution {
   background: radial-gradient(circle, #3fa59f 50%, #00857f 100%);
@@ -745,83 +648,9 @@ footer {
   background-size: cover; }
   footer .container {
     max-width: 1600px; }
-  footer h1 {
+  footer h2 {
     color: white; }
 
-/*---------HEXAGONS-------------*/
-.row-2 {
-  margin-top: -64px !important; }
-
-.row-3 {
-  margin-top: -64px !important; }
-
-.hexagon {
-  position: relative;
-  width: 280px;
-  height: 161.66px;
-  background-color: #ffed00;
-  margin: 80.83px 0;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
-  .hexagon p {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    font-size: 21px;
-    font-weight: 400;
-    padding: 0 12px; }
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 197.99px;
-  height: 197.99px;
-  -webkit-transform: scaleY(0.5774) rotate(-45deg);
-  transform: scaleY(0.5774) rotate(-45deg);
-  background-color: inherit;
-  left: 41.0051px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
-
-.hexagon:before {
-  top: -98.9949px; }
-
-.hexagon:after {
-  bottom: -98.9949px; }
-
-/*cover up extra shadows*/
-.hexagon span {
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 280px;
-  height: 161.6581px;
-  z-index: 2;
-  background-color: inherit;
-  background-image: url(../img/check-big.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.hexagon {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; }
-
-.hexagon:hover {
-  z-index: 8;
-  background-color: #00857f;
-  color: white;
-  cursor: pointer; }
-
-.thin {
-  font-weight: 400; }
-
-/*-----------HEXAGONS END---------------*/
 .wrapper {
   padding: 25px 20px; }
 
