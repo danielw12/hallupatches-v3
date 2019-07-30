@@ -433,6 +433,9 @@
   .pointed-2 img {
     width: 20%; }
 
+  header .product {
+    width: 90%; }
+
   .hexagon:hover {
     -webkit-transform: scale(0.8);
             transform: scale(0.8); }
